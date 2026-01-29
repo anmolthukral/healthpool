@@ -1,0 +1,25 @@
+:root{
+  --bg: #fff7fb;
+  --pink: #ff5c8a;
+  --rose: #c2185b;
+  --muted: #666;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial, sans-serif;background:var(--bg);color:#222}
+.app{max-width:1000px;margin:28px auto;padding:20px}
+.app-header{text-align:center}
+.app-header h1{margin:0;color:var(--rose)}
+.subtitle{color:var(--muted);margin-top:6px}
+.container{margin-top:16px}
+.map-and-list{display:grid;grid-template-columns:1fr 360px;gap:16px}
+.map-placeholder{background:linear-gradient(180deg,#fff,#fff0f6);border-radius:10px;border:1px solid rgba(200,70,120,0.06);height:360px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.hospitals-list{background:#fff;border-radius:10px;padding:12px;border:1px solid rgba(200,70,120,0.06);max-height:360px;overflow:auto}
+.hospital{padding:10px;border-bottom:1px dashed rgba(200,70,120,0.06)}
+.hospital:last-child{border-bottom:none}
+.hospital-name{font-weight:700;color:var(--rose)}
+.hospital-meta{display:flex;gap:8px;margin-top:6px;font-size:13px;color:var(--muted)}
+.loading,.empty,.info{padding:12px;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.04)}
+.footer{text-align:center;color:var(--muted);margin-top:18px}
+
+@media (max-width:880px){.map-and-list{grid-template-columns:1fr;}.map-placeholder{height:220px}.hospitals-list{max-height:none}}

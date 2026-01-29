@@ -1,0 +1,10 @@
+{
+  "name": "healthpool-lynx",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo 'Lynx projects usually use their own CLI; open README for instructions'",
+    "build": "echo 'Build step depends on Lynx toolchain'"
+  },
+  "dependencies": {}
+}
